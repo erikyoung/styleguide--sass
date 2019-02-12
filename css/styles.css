@@ -324,6 +324,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif; }
 
 .grid__row {
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -331,19 +332,32 @@ template {
 
 .grid__col--3 {
   text-align: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
 .grid__col--4 {
   text-align: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
+.grid__col--5 {
+  @includes grids; }
 .grid__col--6 {
   text-align: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   margin: 0 auto; }
+.grid__col--9 {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; }
+.grid__col--12 {
+  @includes grids; }
 
 .img--frame {
   margin: 0 auto; }
@@ -361,6 +375,7 @@ template {
   color: grey; }
 
 .nav__item {
+  justify-content: center;
   font-weight: 400;
   font-family: "Helvetica Neue", Arial, sans-serif; }
 

@@ -9,8 +9,8 @@
 }
 
  .grid__row {
-
-    display: flex;
+ 	text-align:center;
+    display:flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 1rem;
@@ -23,8 +23,17 @@
  	&4 {
  		@include grids;
  	}
+ 	&5 {
+ 		@includes grids;
+ 	}
  	&6 {
  		@include grids; 
+ 	}
+ 	&9 {
+ 		@include grids; 
+ 	}
+ 	&12 {
+ 		@includes grids; 
  	}
 
  }
