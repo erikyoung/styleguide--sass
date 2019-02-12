@@ -8,35 +8,64 @@
 	font-family: $body-content-font-family;
 }
 
+//HANDLES GRID ROWS WITH NESTED COLUMNS
+
  .grid__row {
- 	text-align:center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 1rem;
+ 			display:flex;
+    		flex-direction: column;
+	 	.grid__col--7 {
+	 		text-align:center;
+	 		justify-content: center;
+    		margin-bottom: 1rem;
+	 	}
+	 	.grid__col--5 {
+	 		text-align:center;
+	 		justify-content: center;
+    		margin-bottom: 1rem;
+	 	}
+	 	.grid__col--8 {
+	 		text-align:center;
+	 		justify-content: center;
+    		margin-bottom: 1rem;
+	 	}
+	 	.grid__col--12 {
+	 		text-align:center;
+	 		justify-content: center;
+    		margin-bottom: 1rem;
+	 	}
+
  }
+
+ //HANDLES MY GRID SETTINGS
 
  .grid__col-- {
  	&3 {
  		@include grids;
+ 		
  	}
  	&4 {
  		@include grids;
+ 		
  	}
  	&5 {
  		@includes grids;
+ 		
  	}
  	&6 {
  		@include grids; 
+ 		
  	}
  	&9 {
  		@include grids; 
  	}
  	&12 {
  		@includes grids; 
+
  	}
 
  }
+
+
 
  .img-- {
 	&frame {

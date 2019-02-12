@@ -5,10 +5,13 @@
 
 $main-headline-color: #66E1C1; 
 
-$grid__col--3-color: #DEB2EE;
-
-
-$grid__col--6-color: #44ABCA;
+$french_lilac: #deb2ee;
+$vista_blue: #88d9a0;
+$sea_pink: #ec9fa3;
+$vivid_tangerine: #fd9f85;
+$shakespeare: #3fabca;
+$anakiwa: #7ee6fd;
+$riptide: #80e8d1;
 
 
 //Buttons // 
@@ -23,6 +26,16 @@ $error-button: #E4757A;
 
 $header-font-family: 'proxima-nova', sans-serif;
 $body-content-font-family: 'Helvetica Neue', Arial, sans-serif;
+
+// GRID COLORS //
+
+$color-col-3: $french_lilac;
+$color-col-4: $anakiwa;
+$color-col-5: $vista_blue;
+$color-col-6: $shakespeare;
+$color-col-7: $sea_pink;
+$color-col-8: $vivid_tangerine;
+$color-col-12: $riptide;
 
 
 
