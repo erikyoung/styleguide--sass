@@ -14,9 +14,14 @@
  			display:flex;
     		flex-direction: column;
 	 	.grid__col--7 {
+
 	 		text-align:center;
 	 		justify-content: center;
     		margin-bottom: 1rem;
+    		&.theme__colors {
+    			@include buttons; 
+	 			background-color: $color-col-7;
+	 		}
 	 	}
 	 	.grid__col--5 {
 	 		text-align:center;
@@ -24,9 +29,13 @@
     		margin-bottom: 1rem;
 	 	}
 	 	.grid__col--8 {
-	 		text-align:center;
+	 		
 	 		justify-content: center;
     		margin-bottom: 1rem;
+    		&.theme__colors {
+    			@include buttons; 
+	 			background-color: $color-col-8;
+	 		}
 	 	}
 	 	.grid__col--12 {
 	 		text-align:center;
@@ -39,31 +48,55 @@
  //HANDLES MY GRID SETTINGS
 
  .grid__col-- {
+
  	&3 {
  		@include grids;
- 		
+ 		@include buttons; 
+ 		&.theme__colors {
+	 			background-color: $color-col-3;
+	 		}
  	}
  	&4 {
  		@include grids;
+ 		@include buttons; 
+	 		&.theme__colors {
+	 			background-color: $color-col-4;
+	 		}
+
  		
  	}
  	&5 {
  		@includes grids;
- 		
+ 		@include buttons; 
+ 		&.theme__colors {
+	 			background-color: $color-col-5;
+	 		}
  	}
  	&6 {
  		@include grids; 
+ 		@include buttons; 
+ 		&.theme__colors {
+	 			background-color: $color-col-6;
+	 		}
  		
  	}
  	&9 {
  		@include grids; 
+ 		@include buttons; 
+
  	}
  	&12 {
  		@includes grids; 
+ 		
+ 		&.theme__colors {
+ 				@include buttons; 
+	 			background-color: $color-col-12;
+	 		}
 
  	}
 
  }
+
 
 
 
