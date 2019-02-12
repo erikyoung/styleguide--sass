@@ -5,5 +5,32 @@
     .btn--info,
     .theme__colors {
 
-    text-align: center; 
+   
     }
+
+    .btn-- { 
+	    	&info {
+	    		@include buttons;
+	    			background-color: $info-button;
+	    	}
+	    	&success {
+	    		@include buttons; 
+	    			background-color: $success-button; 
+	    	}
+	    	&default {
+	    		@include buttons;
+	    			background-color: $default-button;
+	    	}
+	    	&error {
+	    		@include buttons;
+	    			background-color: $error-button; 
+	    	}
+	    	&warning {
+	    		@include buttons; 
+	    			background-color: $warning-button; 
+	    	} 
+	    		
+    }
+
+ 
+  

@@ -3,7 +3,20 @@
 	font-family: $header-font-family;
 }
 
+.headline-- {
+	&primary {
+		font-family: $header-font-family;
+		color: $main-headline-color; 
+		
+    	letter-spacing: -1px;
+	}
+	&secondary {
+		font-family: $body-content-font-family;
+		font-weight: 200; 
+		color: grey;
+	}
+}
+
 .container {
-	margin-left: 20px;
-	margin-right: 20px;
+	margin: 20px 50px; 
 }

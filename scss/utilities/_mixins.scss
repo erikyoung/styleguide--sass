@@ -1,2 +1,16 @@
 //create mixins for media queries
 //create mixins for flexbox settings
+
+@mixin buttons {
+	 text-transform: uppercase;
+	 width: 100%;
+	 padding: 10px;
+	 font-family: $body-content-font-family;
+	 color: white; 
+     text-align: center;
+     margin: 10px 15px; 
+     border:none; 
+     border-radius: 5px;  
+
+}
+

@@ -9,16 +9,26 @@
    
 }
 
-ul li {
-    list-style-type: none;
+ul {
+    .nav__item {
+    	list-style-type: none;
+    	font-weight: 300;
+
+    	a {
+
+			color: grey; 
+			text-decoration:none; 
+
+}
+    }
     
 }
 
-a {
-	color: grey; 
-	text-decoration:none; 
 
-}
+
+
+
+
 
 
 
