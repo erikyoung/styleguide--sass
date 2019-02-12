@@ -1,5 +1,10 @@
 .nav__item {
-	margin-bottom: 20px;
-	font-weight: 300; 
+	
+	font-weight: 400; 
 	font-family: $body-content-font-family;
+}
+
+.link {
+	color: $default-button; 
+	text-decoration: none; 
 }

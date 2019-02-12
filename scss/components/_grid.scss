@@ -1,4 +1,41 @@
-.grid__col--3, .grid__col--9 {
-	text-align: center; 
+
+.container {
+	display:flex;
+	flex-direction: column; 
+	justify-content: center; 
+	color: #808080;
+	padding: 1rem 2.5rem;
+	font-family: $body-content-font-family;
 }
 
+ .grid__row {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+ }
+
+ .grid__col-- {
+ 	&3 {
+ 		@include grids;
+ 	}
+ 	&4 {
+ 		@include grids;
+ 	}
+ 	&6 {
+ 		@include grids; 
+ 	}
+
+ }
+
+ .img-- {
+	&frame {
+		margin: 0 auto; 
+
+	}
+	&avatar {
+		margin:  auto;
+		padding: 1rem 1rem; 
+	}
+}
