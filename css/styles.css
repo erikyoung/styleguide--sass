@@ -347,7 +347,7 @@ template {
       font-family: "Helvetica Neue", Arial, sans-serif;
       color: white;
       text-align: center;
-      margin: 10px 15px;
+      margin-top: 20px;
       border: none;
       border-radius: 5px;
       background-color: #ec9fa3; }
@@ -365,7 +365,7 @@ template {
       font-family: "Helvetica Neue", Arial, sans-serif;
       color: white;
       text-align: center;
-      margin: 10px 15px;
+      margin-top: 20px;
       border: none;
       border-radius: 5px;
       background-color: #fd9f85; }
@@ -384,7 +384,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px; }
   .grid__col--3.theme__colors {
@@ -399,7 +399,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px; }
   .grid__col--4.theme__colors {
@@ -412,7 +412,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px; }
   .grid__col--5.theme__colors {
@@ -427,7 +427,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px; }
   .grid__col--6.theme__colors {
@@ -442,7 +442,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px; }
 .grid__col--12 {
@@ -454,7 +454,7 @@ template {
     font-family: "Helvetica Neue", Arial, sans-serif;
     color: white;
     text-align: center;
-    margin: 10px 15px;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
     background-color: #80e8d1; }
@@ -503,7 +503,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
   background-color: #927BC1; }
@@ -514,14 +514,14 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
   background-color: #63CC82; }
 .btn--default {
   border: none;
   width: 100%;
-  margin: 10px 15px;
+  margin-top: 20px;
   color: #fff;
   background-color: #51ddfc;
   border-radius: 5px;
@@ -536,7 +536,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
   background-color: #E4757A; }
@@ -547,7 +547,7 @@ template {
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: white;
   text-align: center;
-  margin: 10px 15px;
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
   background-color: #F07554; }

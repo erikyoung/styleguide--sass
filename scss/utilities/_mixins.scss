@@ -8,7 +8,7 @@
 	 font-family: $body-content-font-family;
 	 color: white; 
      text-align: center;
-     margin: 10px 15px; 
+     margin-top: 20px;
      border:none; 
      border-radius: 5px;  
 
@@ -17,7 +17,7 @@
 @mixin btn-default {
 	border: none;
 	width: 100%;
-	margin: 10px 15px; 
+	margin-top: 20px;
     color: #fff;
     background-color: #51ddfc;
     border-radius: 5px;
