@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box; }
 
-ul .nav__item {
-  list-style-type: none;
-  font-weight: 400;
-  margin-bottom: 20px; }
-  ul .nav__item a {
-    color: #808080;
-    text-decoration: none; }
+ul {
+  padding: 0; }
+  ul .nav__item {
+    list-style-type: none;
+    font-weight: 400;
+    margin-bottom: 20px; }
+    ul .nav__item a {
+      color: #808080;
+      text-decoration: none; }
 
 /* BASE STYLES */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -316,12 +318,20 @@ template {
   display: none; }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  color: #808080;
   padding: 1rem 2.5rem;
-  font-family: "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #808080;
+  line-height: 1.2; }
 
 .grid__row {
   display: flex;
@@ -449,8 +459,6 @@ template {
     border-radius: 5px;
     background-color: #80e8d1; }
 
-.img--frame {
-  margin: 0 auto; }
 .img--avatar {
   margin: auto;
   padding: 1rem 1rem; }
@@ -462,7 +470,18 @@ template {
 .headline--secondary {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 200;
-  color: grey; }
+  color: grey;
+  text-align: left; }
+
+.blockquote {
+  border-left: 7px solid #58e1c1;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 1rem;
+  margin: 2rem 3rem;
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+  font-style: italic; }
 
 .nav__item {
   justify-content: center;
@@ -473,8 +492,6 @@ template {
   color: #5BDDFC;
   text-decoration: none; }
 
-.img--frame {
-  margin: 0 auto; }
 .img--avatar {
   margin: auto;
   padding: 1rem 1rem; }
@@ -502,15 +519,15 @@ template {
   border-radius: 5px;
   background-color: #63CC82; }
 .btn--default {
-  text-transform: uppercase;
-  width: 100%;
-  padding: 10px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: white;
-  text-align: center;
-  margin: 10px 15px;
   border: none;
+  width: 100%;
+  margin: 10px 15px;
+  color: #fff;
+  background-color: #51ddfc;
   border-radius: 5px;
+  padding: 0.8rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
   background-color: #5BDDFC; }
 .btn--error {
   text-transform: uppercase;
@@ -534,5 +551,16 @@ template {
   border: none;
   border-radius: 5px;
   background-color: #F07554; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .form__input {
+    border: none;
+    border-bottom: 5px solid #58e1c1;
+    margin: 0.5rem 0.5rem;
+    padding: 0.5rem 0.5rem;
+    font-weight: 700; }
 
 /*# sourceMappingURL=styles.css.map */

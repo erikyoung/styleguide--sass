@@ -1,0 +1,15 @@
+.form {
+
+	display:flex; 
+	flex-direction: column; 
+	justify-content: center; 
+		&__input {
+			border: none;
+		    border-bottom: 5px solid #58e1c1;
+		    margin: 0.5rem 0.5rem;
+		    padding: 0.5rem 0.5rem;
+		    font-weight: 700;
+		}
+		
+}
+

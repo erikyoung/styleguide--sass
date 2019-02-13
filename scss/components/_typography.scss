@@ -11,6 +11,18 @@
 		font-family: $body-content-font-family;
 		font-weight: 200; 
 		color: grey;
+		text-align:left; 
 	}
 }
+
+	.blockquote {
+		border-left: 7px solid #58e1c1;
+	    border-top-left-radius: 5px;
+	    border-bottom-left-radius: 5px;
+	    padding-left: 1rem;
+	    margin: 2rem 3rem;
+	    margin-bottom: 3rem;
+	    font-size: 1.3rem;
+	    font-style: italic;
+    }
 

@@ -14,6 +14,19 @@
 
 }
 
+@mixin btn-default {
+	border: none;
+	width: 100%;
+	margin: 10px 15px; 
+    color: #fff;
+    background-color: #51ddfc;
+    border-radius: 5px;
+    padding: 0.8rem 1rem;
+    
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 @mixin grids {
 	 
 	justify-content: center; 
