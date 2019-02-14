@@ -8,3 +8,14 @@
 	color: $default-button; 
 	text-decoration: none; 
 }
+
+.nav {
+    @media (min-width: $break-s) {
+        display: inline-flex;
+        &__item {
+            margin-left: 20px;
+            margin-top: 20px;
+            justify-content:end; 
+        }
+    }
+}

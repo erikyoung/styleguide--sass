@@ -11,7 +11,10 @@
      margin-top: 20px;
      border:none; 
      border-radius: 5px;  
-
+     @media (min-width: $break-m) {
+    			margin-left:20px;		
+ 	 }
+     	
 }
 
 @mixin btn-default {
@@ -22,17 +25,14 @@
     background-color: #51ddfc;
     border-radius: 5px;
     padding: 0.8rem 1rem;
-    
     text-transform: uppercase;
     font-weight: 700;
+
 }
 
 @mixin grids {
-	 
-	justify-content: center; 
 	display:flex;
-	flex-direction: column; 
-	
+	flex-direction: column;
 }
 
 
