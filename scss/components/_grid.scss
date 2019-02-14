@@ -14,6 +14,9 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #808080;
     line-height: 1.2;
+    @media (min-width: $break-m) {
+    	padding: 1rem 5.6rem;
+  }
 }
 
 //HANDLES GRID ROWS WITH NESTED COLUMNS
@@ -21,6 +24,12 @@
  .grid__row {
  			display:flex;
     		flex-direction: column;
+    		@media (min-width: $break-m) {
+    			display:flex;
+    			flex-direction:row; 
+    			justify-content: center; 
+  }
+
 	 	.grid__col--7 {
 
 	 		text-align:center;
@@ -49,6 +58,8 @@
 	 		text-align:center;
 	 		justify-content: center;
     		margin-bottom: 1rem;
+    		
+
 	 	}
 
  }
@@ -63,6 +74,9 @@
  		&.theme__colors {
 	 			background-color: $color-col-3;
 	 		}
+	 	@media (min-width: $break-m) {
+    			width: 23.5%;
+  }
  	}
  	&4 {
  		@include grids;
@@ -91,6 +105,12 @@
  	&9 {
  		@include grids; 
  		@include buttons; 
+ 		@media (min-width: $break-m) {
+    			width: 74.5%;
+    			display:flex;
+    			flex-direction: row; 
+    			justify-content: center; 
+  }
 
  	}
  	&12 {

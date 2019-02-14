@@ -37,5 +37,19 @@ $color-col-7: $sea_pink;
 $color-col-8: $vivid_tangerine;
 $color-col-12: $riptide;
 
+// BREAKPOINTS
+
+$break-xs: 420px;
+$break-s: 768px;
+$break-m: 769px;
+$break-l: 1024px;
+
+// Grid
+
+$g-col-width: 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1050px;
+
 
 

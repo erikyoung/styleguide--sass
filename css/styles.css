@@ -332,10 +332,18 @@ template {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #808080;
   line-height: 1.2; }
+  @media (min-width: 769px) {
+    .container {
+      padding: 1rem 5.6rem; } }
 
 .grid__row {
   display: flex;
   flex-direction: column; }
+  @media (min-width: 769px) {
+    .grid__row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
   .grid__row .grid__col--7 {
     text-align: center;
     justify-content: center;
@@ -389,6 +397,9 @@ template {
   border-radius: 5px; }
   .grid__col--3.theme__colors {
     background-color: #deb2ee; }
+  @media (min-width: 769px) {
+    .grid__col--3 {
+      width: 23.5%; } }
 .grid__col--4 {
   justify-content: center;
   display: flex;
@@ -445,6 +456,12 @@ template {
   margin-top: 20px;
   border: none;
   border-radius: 5px; }
+  @media (min-width: 769px) {
+    .grid__col--9 {
+      width: 74.5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center; } }
 .grid__col--12 {
   @includes grids; }
   .grid__col--12.theme__colors {
@@ -519,15 +536,15 @@ template {
   border-radius: 5px;
   background-color: #63CC82; }
 .btn--default {
-  border: none;
-  width: 100%;
-  margin-top: 20px;
-  color: #fff;
-  background-color: #51ddfc;
-  border-radius: 5px;
-  padding: 0.8rem 1rem;
   text-transform: uppercase;
-  font-weight: 700;
+  width: 100%;
+  padding: 10px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
   background-color: #5BDDFC; }
 .btn--error {
   text-transform: uppercase;
