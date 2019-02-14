@@ -337,7 +337,8 @@ template {
   flex-direction: column; }
   @media (min-width: 769px) {
     .grid__row {
-      display: flex; } }
+      display: flex;
+      flex-direction: row; } }
   .grid__row .grid__col--7 {
     text-align: center;
     justify-content: center;
@@ -380,7 +381,8 @@ template {
   .grid__row .grid__col--12 {
     text-align: center;
     justify-content: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    width: 100%; }
 
 .grid__col--3 {
   display: flex;

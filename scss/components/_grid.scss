@@ -23,6 +23,7 @@
     		flex-direction: column;
     		@media (min-width: $break-m) {
     			display:flex;
+    			flex-direction:row; 
     			  			
   }
 
@@ -54,7 +55,7 @@
 	 		text-align:center;
 	 		justify-content: center;
     		margin-bottom: 1rem;
-    		
+    		width: 100%;
 
 	 	}
 
