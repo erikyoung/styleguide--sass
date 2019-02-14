@@ -344,7 +344,6 @@ template {
     justify-content: center;
     margin-bottom: 1rem; }
     .grid__row .grid__col--7.theme__colors {
-      text-transform: uppercase;
       width: 100%;
       padding: 10px;
       font-family: "Helvetica Neue", Arial, sans-serif;
@@ -353,10 +352,16 @@ template {
       margin-top: 20px;
       border: none;
       border-radius: 5px;
+      text-transform: uppercase;
       background-color: #ec9fa3; }
       @media (min-width: 769px) {
         .grid__row .grid__col--7.theme__colors {
-          margin-left: 20px; } }
+          margin-left: 20px;
+          text-transform: capitalize; } }
+      .grid__row .grid__col--7.theme__colors.centered {
+        margin: 0 auto;
+        margin-top: 20px;
+        flex: 0 0 calc(100% / 12 * 7); }
   .grid__row .grid__col--5 {
     text-align: center;
     justify-content: center;
@@ -364,8 +369,10 @@ template {
   .grid__row .grid__col--8 {
     justify-content: center;
     margin-bottom: 1rem; }
+    @media (min-width: 769px) {
+      .grid__row .grid__col--8 p {
+        width: 85%; } }
     .grid__row .grid__col--8.theme__colors {
-      text-transform: uppercase;
       width: 100%;
       padding: 10px;
       font-family: "Helvetica Neue", Arial, sans-serif;
@@ -374,10 +381,12 @@ template {
       margin-top: 20px;
       border: none;
       border-radius: 5px;
+      text-transform: uppercase;
       background-color: #fd9f85; }
       @media (min-width: 769px) {
         .grid__row .grid__col--8.theme__colors {
-          margin-left: 20px; } }
+          margin-left: 20px;
+          text-transform: capitalize; } }
   .grid__row .grid__col--12 {
     text-align: center;
     justify-content: center;
@@ -387,7 +396,6 @@ template {
 .grid__col--3 {
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -395,32 +403,35 @@ template {
   text-align: center;
   margin-top: 20px;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-transform: uppercase; }
   @media (min-width: 769px) {
     .grid__col--3 {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
   .grid__col--3.theme__colors {
-    background-color: #deb2ee; }
+    background-color: #deb2ee;
+    text-align: center; }
 .grid__col--4 {
-  display: flex;
-  flex-direction: column;
-  text-transform: uppercase;
-  width: 100%;
-  padding: 10px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  border: none;
-  border-radius: 5px; }
-  @media (min-width: 769px) {
-    .grid__col--4 {
-      margin-left: 20px; } }
+  justify-content: center;
+  margin-bottom: 1rem; }
   .grid__col--4.theme__colors {
+    width: 100%;
+    padding: 10px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
     background-color: #7ee6fd; }
+    @media (min-width: 769px) {
+      .grid__col--4.theme__colors {
+        margin-left: 20px;
+        text-transform: capitalize; } }
 .grid__col--5 {
   @includes grids;
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -428,16 +439,18 @@ template {
   text-align: center;
   margin-top: 20px;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-transform: uppercase; }
   @media (min-width: 769px) {
     .grid__col--5 {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
   .grid__col--5.theme__colors {
-    background-color: #88d9a0; }
+    background-color: #88d9a0;
+    flex: 0 0 calc(100% / 12 * 5); }
 .grid__col--6 {
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -445,16 +458,17 @@ template {
   text-align: center;
   margin-top: 20px;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-transform: uppercase; }
   @media (min-width: 769px) {
     .grid__col--6 {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
   .grid__col--6.theme__colors {
     background-color: #3fabca; }
 .grid__col--9 {
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -462,10 +476,12 @@ template {
   text-align: center;
   margin-top: 20px;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-transform: uppercase; }
   @media (min-width: 769px) {
     .grid__col--9 {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
   @media (min-width: 769px) {
     .grid__col--9 {
       display: flex;
@@ -475,7 +491,6 @@ template {
   .grid__col--12 {
     display: flex; } }
 .grid__col--12.theme__colors {
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -484,10 +499,12 @@ template {
   margin-top: 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   background-color: #80e8d1; }
   @media (min-width: 769px) {
     .grid__col--12.theme__colors {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
 
 .img--avatar {
   margin: auto;
@@ -521,21 +538,22 @@ template {
 .link {
   color: #5BDDFC;
   text-decoration: none; }
+  @media (min-width: 768px) {
+    .link {
+      text-align: left; } }
 
 @media (min-width: 768px) {
   .nav {
     display: inline-flex; }
     .nav__item {
       margin-left: 20px;
-      margin-top: 20px;
-      justify-content: end; } }
+      margin-top: 20px; } }
 
 .img--avatar {
   margin: auto;
   padding: 1rem 1rem; }
 
 .btn--info {
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -544,12 +562,13 @@ template {
   margin-top: 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   background-color: #927BC1; }
   @media (min-width: 769px) {
     .btn--info {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
 .btn--success {
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -558,26 +577,26 @@ template {
   margin-top: 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   background-color: #63CC82; }
   @media (min-width: 769px) {
     .btn--success {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
 .btn--default {
-  text-transform: uppercase;
-  width: 100%;
-  padding: 10px;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
   border: none;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  background-color: #51ddfc;
   border-radius: 5px;
+  padding: 0.8rem 1rem;
+  text-transform: uppercase;
   background-color: #5BDDFC; }
   @media (min-width: 769px) {
     .btn--default {
-      margin-left: 20px; } }
+      text-transform: capitalize; } }
 .btn--error {
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -586,12 +605,13 @@ template {
   margin-top: 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   background-color: #E4757A; }
   @media (min-width: 769px) {
     .btn--error {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
 .btn--warning {
-  text-transform: uppercase;
   width: 100%;
   padding: 10px;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -600,10 +620,12 @@ template {
   margin-top: 20px;
   border: none;
   border-radius: 5px;
+  text-transform: uppercase;
   background-color: #F07554; }
   @media (min-width: 769px) {
     .btn--warning {
-      margin-left: 20px; } }
+      margin-left: 20px;
+      text-transform: capitalize; } }
 
 .form {
   display: flex;
@@ -615,5 +637,7 @@ template {
     margin: 0.5rem 0.5rem;
     padding: 0.5rem 0.5rem;
     font-weight: 700; }
+  .form__label--hidden {
+    display: none; }
 
 /*# sourceMappingURL=styles.css.map */

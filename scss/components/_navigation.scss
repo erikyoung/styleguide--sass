@@ -7,6 +7,9 @@
 .link {
 	color: $default-button; 
 	text-decoration: none; 
+	@media (min-width: $break-s) {
+		text-align: left; 
+	}
 }
 
 .nav {
@@ -15,7 +18,7 @@
         &__item {
             margin-left: 20px;
             margin-top: 20px;
-            justify-content:end; 
+
         }
     }
 }

@@ -2,7 +2,7 @@
 //create mixins for flexbox settings
 
 @mixin buttons {
-	 text-transform: uppercase;
+	 
 	 width: 100%;
 	 padding: 10px;
 	 font-family: $body-content-font-family;
@@ -11,8 +11,11 @@
      margin-top: 20px;
      border:none; 
      border-radius: 5px;  
+     text-transform: uppercase; 
      @media (min-width: $break-m) {
-    			margin-left:20px;		
+    			margin-left:20px;
+    			text-transform: capitalize; 
+
  	 }
      	
 }
@@ -26,7 +29,12 @@
     border-radius: 5px;
     padding: 0.8rem 1rem;
     text-transform: uppercase;
-    font-weight: 700;
+    
+    @media (min-width: $break-m) {
+    			
+    			text-transform: capitalize; 
+
+ 	 }
 
 }
 

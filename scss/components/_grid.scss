@@ -35,6 +35,13 @@
     		&.theme__colors {
     			@include buttons; 
 	 			background-color: $color-col-7;
+	 			
+	 			&.centered {
+	 				margin: 0 auto; 
+	 				margin-top: 20px; 
+	 				flex:0 0 calc(100% / 12 * 7); 
+
+	 			}
 	 		}
 	 	}
 	 	.grid__col--5 {
@@ -43,12 +50,19 @@
     		margin-bottom: 1rem;
 	 	}
 	 	.grid__col--8 {
-	 		
+	 		p {
+	 			@media (min-width: $break-m) {
+    			width: 85%; 
+    			  			
+  				}
+	 		}
 	 		justify-content: center;
     		margin-bottom: 1rem;
     		&.theme__colors {
     			@include buttons; 
 	 			background-color: $color-col-8;
+
+	 			
 	 		}
 	 	}
 	 	.grid__col--12 {
@@ -68,25 +82,28 @@
  	&3 {
  		@include grids;
  		@include buttons; 
+ 		
+
  		&.theme__colors {
 	 			background-color: $color-col-3;
+	 			text-align:center;
 	 		}
 	 	
  	}
  	&4 {
- 		@include grids;
- 		@include buttons; 
-	 		&.theme__colors {
+ 		justify-content: center;
+    		margin-bottom: 1rem;
+    		&.theme__colors {
+    			@include buttons; 
 	 			background-color: $color-col-4;
-	 		}
-
- 		
+ 		}
  	}
  	&5 {
  		@includes grids;
  		@include buttons; 
  		&.theme__colors {
 	 			background-color: $color-col-5;
+	 			flex:0 0 calc(100% / 12 * 5); 
 	 		}
  	}
  	&6 {
@@ -94,6 +111,7 @@
  		@include buttons; 
  		&.theme__colors {
 	 			background-color: $color-col-6;
+
 	 		}
  		
  	}
@@ -110,12 +128,14 @@
  	}
  	&12 {
  		@media (min-width: $break-m) {
-    			display:flex;	
+    			display:flex;
+
  	 }
  		
  		&.theme__colors {
  				@include buttons; 
 	 			background-color: $color-col-12;
+
 	 		}
 
  	}
